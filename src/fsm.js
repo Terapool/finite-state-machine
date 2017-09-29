@@ -3,7 +3,10 @@ class FSM {
      * Creates new FSM instance.
      * @param config
      */
-    constructor(config) {}
+    constructor(config) {
+      if (config == null) {throwError('A parameter for constructor is missed. Please, give the configuration object')}
+    
+    }
 
     /**
      * Returns active state.
