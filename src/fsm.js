@@ -5,14 +5,16 @@ class FSM {
      */
     constructor(config) {
       if (config == null) {throwError('A parameter for constructor is missed. Please, give the configuration object')}
-    
+    this.state = "normal";
     }
 
     /**
      * Returns active state.
      * @returns {String}
      */
-    getState() {}
+    getState() {
+    return this.state;
+    }
 
     /**
      * Goes to specified state.
